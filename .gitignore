@@ -1,0 +1,29 @@
+# Built application files
+
+*.exe
+*.dll
+*.so
+*.dylib
+*.winmd
+*.cache
+
+
+# Built outputs
+bin/
+obj/
+
+
+# Visual Studio files
+.vs/
+.vscode/
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+
+
+# nuget packages
+
+*.nupkg
+packages/
+
