@@ -5,3 +5,5 @@ steps:
   args: ['push', 'gcr.io/$PROJECT_ID/demoapi:$SHORT_SHA']
 images:
 - 'gcr.io/$PROJECT_ID/demoapi:$SHORT_SHA'
+options:
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
