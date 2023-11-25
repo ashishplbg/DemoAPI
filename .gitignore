@@ -24,6 +24,3 @@ obj/
 
 # nuget packages
 
-*.nupkg
-packages/
-
