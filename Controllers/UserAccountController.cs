@@ -16,6 +16,12 @@ namespace DemoAPI.Controllers
             return userAccount.GetUserAccounts(); ;
         }
 
+        [HttpGet("{id}")]
+        public IEnumerable<UserAccount> Get(int id)
+        {
+            return userAccount.GetUserAccounts(); ;
+        }
+
     }
 
     public class UserAccount
