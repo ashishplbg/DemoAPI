@@ -13,13 +13,14 @@ namespace DemoAPI.Controllers
         [HttpGet]
         public IEnumerable<UserAccount> Get()
         {
-            return userAccount.GetUserAccounts(); ;
+            return userAccount.GetUserAccounts();
         }
 
         [HttpGet("{id}")]
-        public IEnumerable<UserAccount> Get(int id)
+        public UserAccount? Get(int id)
         {
-            return userAccount.GetUserAccounts(); ;
+
+           return userAccount.GetUserAccounts().Where(x => x.UserId == id).SingleOrDefault();
         }
 
     }
@@ -61,5 +62,7 @@ namespace DemoAPI.Controllers
             return this.UserAccounts;
 
         }
+
+       
     }
 }
