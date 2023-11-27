@@ -19,8 +19,7 @@ namespace DemoAPI.Controllers
         [HttpGet("{id}")]
         public UserAccount? Get(int id)
         {
-
-           return userAccount.GetUserAccounts().Where(x => x.UserId == id).SingleOrDefault();
+            return userAccount.GetUserAccounts().Where(x => x.UserId == id).SingleOrDefault();
         }
 
     }
